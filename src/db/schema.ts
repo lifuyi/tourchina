@@ -266,3 +266,86 @@ export const shared_itineraries = pgTable("shared_itineraries", {
   created_at: timestamp({ withTimezone: true }),
   updated_at: timestamp({ withTimezone: true }),
 });
+
+// Forum Categories
+export const forum_categories = pgTable("forum_categories", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  uuid: varchar({ length: 255 }).notNull().unique(),
+  name: varchar({ length: 255 }).notNull(),
+  slug: varchar({ length: 255 }).notNull().unique(),
+  description: text(),
+  icon: varchar({ length: 100 }),
+  color: varchar({ length: 20 }),
+  topic_count: integer().default(0),
+  post_count: integer().default(0),
+  last_post_at: timestamp({ withTimezone: true }),
+  last_post_by: varchar({ length: 255 }),
+  sort_order: integer().default(0),
+  status: varchar({ length: 50 }).default('active'),
+  created_at: timestamp({ withTimezone: true }),
+  updated_at: timestamp({ withTimezone: true }),
+});
+
+// Forum Topics
+export const forum_topics = pgTable("forum_topics", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  uuid: varchar({ length: 255 }).notNull().unique(),
+  title: varchar({ length: 255 }).notNull(),
+  slug: varchar({ length: 255 }).notNull(),
+  content: text().notNull(),
+  category_uuid: varchar({ length: 255 }).notNull(),
+  author_uuid: varchar({ length: 255 }).notNull(),
+  reply_count: integer().default(0),
+  view_count: integer().default(0),
+  like_count: integer().default(0),
+  is_pinned: boolean().default(false),
+  is_locked: boolean().default(false),
+  is_solved: boolean().default(false),
+  tags: text(), // JSON array of tags
+  last_reply_at: timestamp({ withTimezone: true }),
+  last_reply_by: varchar({ length: 255 }),
+  status: varchar({ length: 50 }).default('active'),
+  created_at: timestamp({ withTimezone: true }),
+  updated_at: timestamp({ withTimezone: true }),
+});
+
+// Forum Replies
+export const forum_replies = pgTable("forum_replies", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  uuid: varchar({ length: 255 }).notNull().unique(),
+  content: text().notNull(),
+  topic_uuid: varchar({ length: 255 }).notNull(),
+  author_uuid: varchar({ length: 255 }).notNull(),
+  parent_reply_uuid: varchar({ length: 255 }), // For nested replies
+  like_count: integer().default(0),
+  is_solution: boolean().default(false),
+  is_edited: boolean().default(false),
+  edited_at: timestamp({ withTimezone: true }),
+  status: varchar({ length: 50 }).default('active'),
+  created_at: timestamp({ withTimezone: true }),
+  updated_at: timestamp({ withTimezone: true }),
+});
+
+// Forum Likes
+export const forum_likes = pgTable("forum_likes", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  user_uuid: varchar({ length: 255 }).notNull(),
+  target_uuid: varchar({ length: 255 }).notNull(), // topic_uuid or reply_uuid
+  target_type: varchar({ length: 50 }).notNull(), // 'topic' or 'reply'
+  created_at: timestamp({ withTimezone: true }),
+}, (table) => [
+  unique("user_target_unique").on(table.user_uuid, table.target_uuid, table.target_type),
+]);
+
+// Forum User Stats
+export const forum_user_stats = pgTable("forum_user_stats", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  user_uuid: varchar({ length: 255 }).notNull().unique(),
+  topic_count: integer().default(0),
+  reply_count: integer().default(0),
+  like_count: integer().default(0),
+  reputation_score: integer().default(0),
+  badges: text(), // JSON array of badges
+  created_at: timestamp({ withTimezone: true }),
+  updated_at: timestamp({ withTimezone: true }),
+});
