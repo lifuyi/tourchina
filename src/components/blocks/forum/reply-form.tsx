@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Bold, Italic, Link, Image, Smile, Send } from "lucide-react";
+import { useAppContext } from "@/contexts/app";
+import SignIn from "@/components/sign/sign_in";
 
 interface ReplyFormProps {
   topicSlug: string;
@@ -15,13 +17,7 @@ interface ReplyFormProps {
 export default function ReplyForm({ topicSlug, parentReplyUuid }: ReplyFormProps) {
   const [content, setContent] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  // Mock user data - in real app, get from auth context
-  const currentUser = {
-    name: "CurrentUser",
-    avatar: "/imgs/users/10.png",
-    isLoggedIn: true
-  };
+  const { user } = useAppContext();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,23 +25,42 @@ export default function ReplyForm({ topicSlug, parentReplyUuid }: ReplyFormProps
 
     setIsSubmitting(true);
     
-    // Mock API call - in real app, submit to backend
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setContent("");
-      // In real app: refresh replies, show success message
+      const response = await fetch("/api/forum/replies", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          content: content.trim(),
+          topic_uuid: topicSlug, // Note: You'll need to pass the actual topic UUID
+          parent_reply_uuid: parentReplyUuid,
+        }),
+      });
+
+      const result = await response.json();
+      
+      if (result.code === 0) {
+        setContent("");
+        // Refresh the page to show new reply
+        window.location.reload();
+      } else {
+        console.error("Failed to submit reply:", result.message);
+        alert("Failed to submit reply. Please try again.");
+      }
     } catch (error) {
       console.error("Failed to submit reply:", error);
+      alert("Network error. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  if (!currentUser.isLoggedIn) {
+  if (!user) {
     return (
       <Card className="p-6 text-center">
         <p className="text-gray-600 mb-4">Please sign in to join the discussion</p>
-        <Button>Sign In</Button>
+        <SignIn />
       </Card>
     );
   }
@@ -54,15 +69,15 @@ export default function ReplyForm({ topicSlug, parentReplyUuid }: ReplyFormProps
     <Card className="p-6">
       <div className="flex items-start gap-4">
         <Avatar className="h-10 w-10">
-          <AvatarImage src={currentUser.avatar} />
-          <AvatarFallback>{currentUser.name[0]}</AvatarFallback>
+          <AvatarImage src={user.avatar_url} />
+          <AvatarFallback>{user.nickname?.[0] || user.email?.[0]}</AvatarFallback>
         </Avatar>
         
         <div className="flex-1">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <div className="flex items-center gap-2 mb-2">
-                <span className="font-medium text-gray-900">Reply as {currentUser.name}</span>
+                <span className="font-medium text-gray-900">Reply as {user.nickname || user.email}</span>
               </div>
               
               {/* Formatting Toolbar */}

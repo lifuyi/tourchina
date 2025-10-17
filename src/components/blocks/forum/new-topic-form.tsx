@@ -10,9 +10,12 @@ import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Bold, Italic, Link, Image, X, Tag } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useAppContext } from "@/contexts/app";
+import SignIn from "@/components/sign/sign_in";
 
 export default function NewTopicForm() {
   const router = useRouter();
+  const { user } = useAppContext();
   const [formData, setFormData] = useState({
     title: "",
     category: "",
@@ -21,6 +24,19 @@ export default function NewTopicForm() {
   });
   const [tagInput, setTagInput] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Check if user is authenticated
+  if (!user) {
+    return (
+      <Card className="p-8 text-center">
+        <h2 className="text-xl font-semibold mb-4">Sign in to create topics</h2>
+        <p className="text-gray-600 mb-6">
+          You need to be signed in to start new discussions in the forum.
+        </p>
+        <SignIn />
+      </Card>
+    );
+  }
 
   // Mock categories - in real app, fetch from API
   const categories = [
@@ -64,20 +80,32 @@ export default function NewTopicForm() {
 
     setIsSubmitting(true);
     
-    // Mock API call - in real app, submit to backend
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const response = await fetch("/api/forum/topics", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title: formData.title.trim(),
+          category_uuid: formData.category,
+          content: formData.content.trim(),
+          tags: formData.tags,
+        }),
+      });
+
+      const result = await response.json();
       
-      // Mock topic slug generation
-      const slug = formData.title.toLowerCase()
-        .replace(/[^a-z0-9\s]/g, '')
-        .replace(/\s+/g, '-')
-        .substring(0, 60);
-      
-      // Redirect to new topic
-      router.push(`/forum/topic/${slug}`);
+      if (result.code === 0) {
+        // Success - redirect to new topic
+        router.push(`/forum/topic/${result.data.slug}`);
+      } else {
+        console.error("Failed to create topic:", result.message);
+        alert("Failed to create topic. Please try again.");
+      }
     } catch (error) {
       console.error("Failed to create topic:", error);
+      alert("Network error. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
