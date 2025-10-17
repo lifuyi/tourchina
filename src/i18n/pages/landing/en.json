@@ -28,6 +28,11 @@
           "icon": "Route"
         },
         {
+          "title": "Forum",
+          "url": "/forum",
+          "icon": "MessageCircle"
+        },
+        {
           "title": "Blog",
           "url": "/blog",
           "icon": "BookOpen"
