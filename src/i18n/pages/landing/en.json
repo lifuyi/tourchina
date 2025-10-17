@@ -1,46 +1,46 @@
 {
-  "template": "shipany-template-one",
+  "template": "china-tour-website",
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "China Tours",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "China Tours"
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "Features",
-          "url": "/#feature",
-          "icon": "RiSparkling2Line"
+          "title": "Tours",
+          "url": "/tours",
+          "icon": "MapPin"
         },
         {
-          "title": "Pricing",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
+          "title": "Destinations",
+          "url": "/destinations",
+          "icon": "Globe"
         },
         {
-          "title": "Showcase",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
+          "title": "Custom Trip",
+          "url": "/custom-trip",
+          "icon": "Route"
         },
         {
-          "title": "Docs",
-          "url": "/docs",
-          "icon": "RiBookOpenLine"
+          "title": "Blog",
+          "url": "/blog",
+          "icon": "BookOpen"
         }
       ]
     },
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "variant": "link",
-        "icon": "RiArrowRightUpLine"
+        "title": "Get Quote",
+        "url": "/custom-trip",
+        "target": "_self",
+        "variant": "default",
+        "icon": "MessageSquare"
       }
     ],
     "show_sign": true,
@@ -48,456 +48,385 @@
     "show_locale": true
   },
   "hero": {
-    "title": "Ship Any AI Startups in hours, not days",
-    "highlight_text": "Ship Any",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+    "title": "Discover Your Perfect China Adventure",
+    "highlight_text": "Perfect China",
+    "description": "From ancient wonders to modern marvels, create unforgettable memories with our custom tours and digital travel guides.<br/>Expert local knowledge, personalized itineraries, and 24/7 support.",
     "announcement": {
-      "label": "2025",
-      "title": "🎉 Happy New Year",
-      "url": "/pricing"
+      "label": "New",
+      "title": "🎉 Digital City Guides Now Available - Instant Download!",
+      "url": "/tours?type=digital"
     },
-    "tip": "🎁 50% off before 2025",
+    "tip": "✈️ Over 10,000 travelers have explored China with us",
     "buttons": [
       {
-        "title": "Get Started",
-        "icon": "RiFlashlightFill",
-        "url": "/pricing",
+        "title": "Explore Tours",
+        "icon": "MapPin",
+        "url": "/tours",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "Read Document",
-        "icon": "RiBookOpenLine",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "Create Custom Trip",
+        "icon": "Route",
+        "url": "/custom-trip",
+        "target": "_self",
         "variant": "outline"
       }
     ],
-    "show_happy_users": true,
-    "show_badge": false
+    "show_badge": false,
+    "show_happy_users": true
   },
   "branding": {
-    "title": "ShipAny is built on the shoulders of giants",
+    "title": "Trusted by Travelers Worldwide",
     "items": [
       {
-        "title": "Next.js",
+        "title": "TripAdvisor",
         "image": {
-          "src": "/imgs/logos/nextjs.svg",
-          "alt": "Next.js"
+          "src": "/imgs/logos/tripadvisor.svg",
+          "alt": "TripAdvisor"
         }
       },
       {
-        "title": "React",
+        "title": "Booking.com",
         "image": {
-          "src": "/imgs/logos/react.svg",
-          "alt": "React"
+          "src": "/imgs/logos/booking.svg",
+          "alt": "Booking.com"
         }
       },
       {
-        "title": "TailwindCSS",
+        "title": "Lonely Planet",
         "image": {
-          "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "TailwindCSS"
+          "src": "/imgs/logos/lonelyplanet.svg",
+          "alt": "Lonely Planet"
         }
       },
       {
-        "title": "Shadcn/UI",
+        "title": "Expedia",
         "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "Shadcn/UI"
-        }
-      },
-      {
-        "title": "Vercel",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "Vercel"
+          "src": "/imgs/logos/expedia.svg",
+          "alt": "Expedia"
         }
       }
     ]
   },
   "introduce": {
-    "name": "introduce",
-    "title": "What is ShipAny",
-    "label": "Introduce",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
+    "title": "Two Ways to Explore China",
+    "description": "Choose between instant digital guides or personalized tour services",
     "items": [
       {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
-        "icon": "RiNextjsFill"
+        "title": "Digital Travel Guides",
+        "description": "Instant download city guides, itinerary planners, and cultural tips. Perfect for independent travelers who want expert knowledge at their fingertips.",
+        "icon": "Download",
+        "url": "/tours?type=digital"
       },
       {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
-        "icon": "RiDatabase2Line"
-      },
-      {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
-        "icon": "RiCloudyFill"
+        "title": "Custom Tour Services", 
+        "description": "Personalized tours with local guides, custom itineraries, and full-service planning. Let us handle everything while you enjoy the journey.",
+        "icon": "Users",
+        "url": "/tours?type=service"
       }
     ]
   },
   "benefit": {
-    "name": "benefit",
-    "title": "Why Choose ShipAny",
-    "label": "Benefits",
-    "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    "title": "Why Choose Our China Tours",
+    "description": "Experience China like never before with our local expertise and personalized approach",
     "items": [
       {
-        "title": "Complete Framework",
-        "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
-        "icon": "RiNextjsFill",
-        "image": {
-          "src": "/imgs/features/2.png"
-        }
+        "title": "Local Expert Guides",
+        "description": "Native Chinese guides with deep cultural knowledge and language skills",
+        "icon": "UserCheck"
       },
       {
-        "title": "Rich Templates Library",
-        "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
-        "icon": "RiClapperboardAiLine",
-        "image": {
-          "src": "/imgs/features/3.png"
-        }
+        "title": "Custom Itineraries",
+        "description": "Every trip is tailored to your interests, budget, and travel style",
+        "icon": "Route"
       },
       {
-        "title": "Technical Guidance",
-        "description": "Get dedicated support and join our developer community to ensure your successful launch.",
-        "icon": "RiCodeFill",
-        "image": {
-          "src": "/imgs/features/4.png"
-        }
+        "title": "Best Price Guarantee",
+        "description": "We match any competitor's price and often beat it with added value",
+        "icon": "DollarSign"
+      },
+      {
+        "title": "24/7 Support",
+        "description": "Round-the-clock assistance before, during, and after your trip",
+        "icon": "Phone"
       }
     ]
   },
   "usage": {
-    "name": "usage",
-    "title": "How to Launch with ShipAny",
-    "description": "Get your AI SaaS startup running in three simple steps:",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "image_position": "left",
-    "text_align": "center",
+    "title": "Popular China Destinations",
+    "description": "Explore the most sought-after destinations in China",
     "items": [
       {
-        "title": "Get ShipAny",
-        "description": "Buy ShipAny with a one-time payment. Check your email for the code and documentation.",
+        "title": "Beijing",
+        "description": "Ancient capital with the Great Wall, Forbidden City, and rich imperial history",
         "image": {
-          "src": "/imgs/features/5.png"
-        }
+          "src": "/imgs/destinations/beijing.jpg",
+          "alt": "Beijing"
+        },
+        "url": "/destinations/beijing"
       },
       {
-        "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of ShipAny. Start building your AI SaaS startup.",
+        "title": "Shanghai",
+        "description": "Modern metropolis blending Eastern tradition with Western innovation",
         "image": {
-          "src": "/imgs/features/6.png"
-        }
+          "src": "/imgs/destinations/shanghai.jpg",
+          "alt": "Shanghai"
+        },
+        "url": "/destinations/shanghai"
       },
       {
-        "title": "Customize Your Project",
-        "description": "Modify the template with your data and contents. Specific AI functionality needs.",
+        "title": "Xi'an",
+        "description": "Home to the Terracotta Warriors and ancient Silk Road history",
         "image": {
-          "src": "/imgs/features/7.png"
-        }
+          "src": "/imgs/destinations/xian.jpg",
+          "alt": "Xi'an"
+        },
+        "url": "/destinations/xian"
       },
       {
-        "title": "Deploy to Production",
-        "description": "Deploy your project to production with a few steps and start serving customers immediately.",
+        "title": "Guilin",
+        "description": "Stunning karst landscapes and Li River cruise experiences",
         "image": {
-          "src": "/imgs/features/8.png"
-        }
+          "src": "/imgs/destinations/guilin.jpg",
+          "alt": "Guilin"
+        },
+        "url": "/destinations/guilin"
+      },
+      {
+        "title": "Chengdu",
+        "description": "Panda capital and gateway to Sichuan cuisine and culture",
+        "image": {
+          "src": "/imgs/destinations/chengdu.jpg",
+          "alt": "Chengdu"
+        },
+        "url": "/destinations/chengdu"
+      },
+      {
+        "title": "Chongqing",
+        "description": "Mountain city famous for hotpot and Yangtze River cruises",
+        "image": {
+          "src": "/imgs/destinations/chongqing.jpg",
+          "alt": "Chongqing"
+        },
+        "url": "/destinations/chongqing"
       }
     ]
   },
   "feature": {
-    "name": "feature",
-    "title": "Key Features of ShipAny",
-    "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    "title": "Complete China Travel Solutions",
+    "description": "Everything you need for an unforgettable China adventure",
     "items": [
       {
-        "title": "Next.js Boilerplate",
-        "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-        "icon": "RiNextjsFill"
+        "title": "Visa Assistance",
+        "description": "Complete guidance for Chinese visa applications and requirements",
+        "icon": "FileText"
       },
       {
-        "title": "Authentication & Payments",
-        "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-        "icon": "RiKey2Fill"
+        "title": "Cultural Preparation",
+        "description": "Learn essential customs, phrases, and etiquette before you travel",
+        "icon": "BookOpen"
       },
       {
-        "title": "Data Infrastructure",
-        "description": "Built-in Supabase integration for reliable and scalable data storage.",
-        "icon": "RiDatabase2Line"
+        "title": "Transportation",
+        "description": "High-speed rail bookings, domestic flights, and local transfers",
+        "icon": "Train"
       },
       {
-        "title": "One-Click Deployment",
-        "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-        "icon": "RiCloudy2Fill"
+        "title": "Accommodation",
+        "description": "Carefully selected hotels from budget to luxury across all destinations",
+        "icon": "Building"
       },
       {
-        "title": "Business Analytics",
-        "description": "Integrated Google Analytics and Search Console for tracking growth.",
-        "icon": "RiBarChart2Line"
+        "title": "Food Experiences",
+        "description": "Authentic dining experiences and food tours with local experts",
+        "icon": "UtensilsCrossed"
       },
       {
-        "title": "AI-Ready Infrastructure",
-        "description": "Pre-configured AI integration with built-in credits system and API sales.",
-        "icon": "RiRobot2Line"
+        "title": "Emergency Support",
+        "description": "24/7 emergency assistance and local contacts throughout China",
+        "icon": "Shield"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Featured Tours & Experiences",
+    "description": "Our most popular China tours and digital guides",
+    "items": [
+      {
+        "title": "Classic China Explorer",
+        "description": "14 days • Beijing → Xi'an → Shanghai",
+        "image": {
+          "src": "/imgs/showcases/classic-china.jpg",
+          "alt": "Classic China Explorer"
+        },
+        "price": "From $2,299",
+        "rating": "4.9",
+        "type": "Tour Service"
+      },
+      {
+        "title": "Complete Beijing Guide",
+        "description": "Digital PDF • 120 pages",
+        "image": {
+          "src": "/imgs/showcases/beijing-guide.jpg",
+          "alt": "Complete Beijing Guide"
+        },
+        "price": "$19.99",
+        "rating": "4.8",
+        "type": "Digital Guide"
+      },
+      {
+        "title": "Yangtze River Cruise",
+        "description": "8 days • Chongqing → Shanghai",
+        "image": {
+          "src": "/imgs/showcases/yangtze-cruise.jpg",
+          "alt": "Yangtze River Cruise"
+        },
+        "price": "From $1,899",
+        "rating": "4.7",
+        "type": "Tour Service"
       }
     ]
   },
   "stats": {
-    "name": "stats",
-    "label": "Stats",
-    "title": "People Love ShipAny",
-    "description": "for it's easy to use and fast to ship.",
-    "icon": "FaRegHeart",
+    "title": "Trusted by Travelers Worldwide",
     "items": [
       {
-        "title": "Trusted by",
-        "label": "99+",
-        "description": "Customers"
+        "number": "10,000+",
+        "label": "Happy Travelers"
       },
       {
-        "title": "Built in",
-        "label": "20+",
-        "description": "Components"
+        "number": "98%",
+        "label": "Satisfaction Rate"
       },
       {
-        "title": "Ship Fast in",
-        "label": "5",
-        "description": "Minutes"
+        "number": "50+",
+        "label": "China Destinations"
+      },
+      {
+        "number": "24/7",
+        "label": "Support Available"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Choose Your China Adventure",
+    "description": "Digital guides for independent travelers or full-service tours with expert guidance",
+    "plans": [
+      {
+        "name": "Digital Guides",
+        "description": "Perfect for independent travelers",
+        "price": "$19",
+        "billing": "per guide",
+        "features": [
+          "Instant PDF download",
+          "Detailed city maps",
+          "Restaurant recommendations",
+          "Cultural tips & phrases",
+          "Transportation guides",
+          "30-day money-back guarantee"
+        ],
+        "cta": "Browse Guides",
+        "url": "/tours?type=digital",
+        "popular": false
+      },
+      {
+        "name": "Custom Tours",
+        "description": "Fully personalized China experiences",
+        "price": "$1,599",
+        "billing": "starting from",
+        "features": [
+          "Personal travel coordinator",
+          "Custom itinerary planning",
+          "Local expert guides",
+          "All accommodations included",
+          "Transportation arrangements",
+          "24/7 support during travel",
+          "Flexible modifications",
+          "Group discounts available"
+        ],
+        "cta": "Request Quote",
+        "url": "/custom-trip",
+        "popular": true
+      },
+      {
+        "name": "Travel Planning",
+        "description": "Professional consultation service",
+        "price": "$99",
+        "billing": "per session",
+        "features": [
+          "1-hour video consultation",
+          "Personalized recommendations",
+          "Itinerary review",
+          "Budget optimization",
+          "Visa guidance",
+          "Travel tips & insights"
+        ],
+        "cta": "Book Consultation",
+        "url": "/consultation",
+        "popular": false
       }
     ]
   },
   "testimonial": {
-    "name": "testimonial",
-    "label": "Testimonial",
-    "title": "What Users Say About ShipAny",
-    "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
-    "icon": "GoThumbsup",
+    "title": "What Our Travelers Say",
+    "description": "Real experiences from real travelers",
     "items": [
       {
-        "title": "David Chen",
-        "label": "Founder of AIWallpaper.shop",
-        "description": "ShipAny saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
-        "image": {
-          "src": "/imgs/users/1.png"
-        }
+        "content": "The Beijing digital guide was incredibly detailed and saved us so much time. The restaurant recommendations were spot-on!",
+        "author": "Sarah Johnson",
+        "role": "Independent Traveler",
+        "avatar": "/imgs/users/sarah.jpg",
+        "rating": 5
       },
       {
-        "title": "Rachel Kim",
-        "label": "CTO at HeyBeauty.ai",
-        "description": "The pre-built AI infrastructure is a game-changer. We didn't have to worry about architecture - just focused on our AI beauty tech and went live fast.",
-        "image": {
-          "src": "/imgs/users/2.png"
-        }
+        "content": "Our custom 12-day tour exceeded all expectations. Our guide was knowledgeable and the itinerary perfectly balanced must-see sights with local experiences.",
+        "author": "Michael Chen",
+        "role": "Family Vacation",
+        "avatar": "/imgs/users/michael.jpg",
+        "rating": 5
       },
       {
-        "title": "Marcus Thompson",
-        "label": "Solo Developer",
-        "description": "As a solo developer, ShipAny gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
-        "image": {
-          "src": "/imgs/users/3.png"
-        }
-      },
-      {
-        "title": "Sofia Garcia",
-        "label": "CEO of Melodisco",
-        "description": "The templates are production-ready and highly customizable. We built our AI music platform in hours instead of months. Incredible time-to-market!",
-        "image": {
-          "src": "/imgs/users/4.png"
-        }
-      },
-      {
-        "title": "James Wilson",
-        "label": "Tech Lead at GPTs.works",
-        "description": "ShipAny's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
-        "image": {
-          "src": "/imgs/users/5.png"
-        }
-      },
-      {
-        "title": "Anna Zhang",
-        "label": "Startup Founder",
-        "description": "From idea to launch in 3 days! ShipAny's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
-        "image": {
-          "src": "/imgs/users/6.png"
-        }
+        "content": "The 24/7 support was a lifesaver when our flight was delayed. They rearranged our entire schedule seamlessly.",
+        "author": "Emma Williams",
+        "role": "Solo Traveler",
+        "avatar": "/imgs/users/emma.jpg",
+        "rating": 5
       }
     ]
   },
   "faq": {
-    "name": "faq",
-    "label": "FAQ",
-    "title": "Frequently Asked Questions About ShipAny",
-    "description": "Have another question? Contact us on Discord or by email.",
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about traveling to China",
     "items": [
       {
-        "title": "What exactly is ShipAny and how does it work?",
-        "description": "ShipAny is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "question": "Do I need a visa to visit China?",
+        "answer": "Most travelers need a visa to enter China. We provide complete visa assistance and guidance for the application process. Some cities offer visa-free transit for certain durations."
       },
       {
-        "title": "Do I need advanced technical skills to use ShipAny?",
-        "description": "While basic programming knowledge is helpful, ShipAny is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "question": "What's included in custom tour packages?",
+        "answer": "Our custom tours include accommodation, transportation, guided tours, entrance fees, and 24/7 support. Meals can be included based on your preference. International flights are typically not included."
       },
       {
-        "title": "What types of AI SaaS can I build with ShipAny?",
-        "description": "ShipAny supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "question": "How far in advance should I book?",
+        "answer": "We recommend booking at least 4-6 weeks in advance for custom tours to ensure availability and visa processing time. Digital guides are available for instant download."
       },
       {
-        "title": "How long does it typically take to launch with ShipAny?",
-        "description": "With ShipAny, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "question": "Can you accommodate dietary restrictions?",
+        "answer": "Absolutely! We work with local restaurants and hotels to accommodate all dietary needs including vegetarian, vegan, halal, kosher, and allergy requirements."
       },
       {
-        "title": "What's included in the ShipAny infrastructure?",
-        "description": "ShipAny provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
-      },
-      {
-        "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All ShipAny templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "question": "What if I need to cancel my tour?",
+        "answer": "We offer flexible cancellation policies. Digital products have a 30-day money-back guarantee. Custom tours have varying cancellation terms based on timing - full details in our terms."
       }
     ]
   },
   "cta": {
-    "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with ShipAny.",
-    "buttons": [
-      {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "icon": "GoArrowUpRight"
-      },
-      {
-        "title": "Read Document",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
-        "variant": "outline"
-      }
-    ]
-  },
-  "footer": {
-    "name": "footer",
-    "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
-      "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
-      },
-      "url": "/"
-    },
-    "copyright": "© 2025 • ShipAny All rights reserved.",
-    "nav": {
-      "items": [
-        {
-          "title": "About",
-          "children": [
-            {
-              "title": "Features",
-              "url": "/#feature",
-              "target": "_self"
-            },
-            {
-              "title": "Showcases",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
-              "title": "Pricing",
-              "url": "/#pricing",
-              "target": "_self"
-            }
-          ]
-        },
-        {
-          "title": "Resources",
-          "children": [
-            {
-              "title": "Documents",
-              "url": "https://docs.shipany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "Components",
-              "url": "https://shipany.ai/components",
-              "target": "_blank"
-            },
-            {
-              "title": "Templates",
-              "url": "https://shipany.ai/templates",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "title": "Friends",
-          "children": [
-            {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
-            }
-          ]
-        }
-      ]
-    },
-    "social": {
-      "items": [
-        {
-          "title": "X",
-          "icon": "RiTwitterXFill",
-          "url": "https://x.com/shipanyai",
-          "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "RiGithubFill",
-          "url": "https://github.com/shipanyai",
-          "target": "_blank"
-        },
-        {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/HQNnrzjZQS",
-          "target": "_blank"
-        },
-        {
-          "title": "Email",
-          "icon": "RiMailLine",
-          "url": "mailto:support@shipany.ai",
-          "target": "_self"
-        }
-      ]
-    },
-    "agreement": {
-      "items": [
-        {
-          "title": "Privacy Policy",
-          "url": "/privacy-policy"
-        },
-        {
-          "title": "Terms of Service",
-          "url": "/terms-of-service"
-        }
-      ]
+    "title": "Ready to Explore China?",
+    "description": "Start planning your unforgettable China adventure today",
+    "button": {
+      "title": "Start Planning Now",
+      "url": "/tours"
     }
   }
 }
