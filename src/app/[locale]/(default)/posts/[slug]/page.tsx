@@ -4,6 +4,35 @@ import BlogDetail from "@/components/blocks/blog-detail";
 import Empty from "@/components/blocks/empty";
 import { Post } from "@/types/post";
 
+// Define the BlogPost interface that matches the BlogDetail component
+interface BlogPost {
+  id: string;
+  title: string;
+  slug: string;
+  excerpt: string;
+  content: string;
+  featuredImage: string;
+  author: {
+    name: string;
+    avatar: string;
+    bio: string;
+    social?: {
+      twitter?: string;
+      instagram?: string;
+      website?: string;
+    };
+  };
+  category: string;
+  tags: string[];
+  publishedAt: string;
+  readTime: number;
+  views: number;
+  likes: number;
+  comments: number;
+  featured: boolean;
+  relatedPosts?: string[];
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -40,5 +69,28 @@ export default async function ({
     return <Empty message="Post not found" />;
   }
 
-  return <BlogDetail post={post as unknown as Post} />;
+  // Map the Post data to BlogPost interface
+  const blogPost: BlogPost = {
+    id: post.uuid || '',
+    title: post.title || '',
+    slug: post.slug || '',
+    excerpt: post.description || '',
+    content: post.content || '',
+    featuredImage: post.cover_url || '',
+    author: {
+      name: post.author_name || '',
+      avatar: post.author_avatar_url || '',
+      bio: '',
+    },
+    category: '',
+    tags: [],
+    publishedAt: post.created_at?.toString() || '',
+    readTime: 5, // Default value
+    views: 0, // Default value
+    likes: 0, // Default value
+    comments: 0, // Default value
+    featured: false, // Default value
+  };
+
+  return <BlogDetail post={blogPost} />;
 }

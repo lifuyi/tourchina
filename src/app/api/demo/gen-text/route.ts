@@ -1,5 +1,5 @@
 import {
-  LanguageModelV1,
+  LanguageModel,
   extractReasoningMiddleware,
   generateText,
   wrapLanguageModel,
@@ -18,7 +18,7 @@ export async function POST(req: Request) {
       return respErr("invalid params");
     }
 
-    let textModel: LanguageModelV1;
+    let textModel: LanguageModel;
 
     switch (provider) {
       case "openai":
@@ -47,7 +47,7 @@ export async function POST(req: Request) {
         const siliconflow = createOpenAICompatible({
           name: "siliconflow",
           apiKey: process.env.SILICONFLOW_API_KEY,
-          baseURL: process.env.SILICONFLOW_BASE_URL,
+          baseURL: process.env.SILICONFLOW_BASE_URL || "",
         });
         textModel = siliconflow(model);
 

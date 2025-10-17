@@ -20,6 +20,9 @@ import {
   MessageSquare
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import ReviewsSystem from "@/components/blocks/reviews-system";
+import FavoritesSystem from "@/components/blocks/favorites-system";
+import Recommendations from "@/components/blocks/recommendations";
 
 interface Tour {
   id: string;
