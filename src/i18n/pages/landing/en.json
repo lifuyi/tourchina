@@ -114,24 +114,7 @@
       }
     ]
   },
-  "introduce": {
-    "title": "Two Ways to Explore China",
-    "description": "Choose between instant digital guides or personalized tour services",
-    "items": [
-      {
-        "title": "Digital Travel Guides",
-        "description": "Instant download city guides, itinerary planners, and cultural tips. Perfect for independent travelers who want expert knowledge at their fingertips.",
-        "icon": "Download",
-        "url": "/tours?type=digital"
-      },
-      {
-        "title": "Custom Tour Services", 
-        "description": "Personalized tours with local guides, custom itineraries, and full-service planning. Let us handle everything while you enjoy the journey.",
-        "icon": "Users",
-        "url": "/tours?type=service"
-      }
-    ]
-  },
+  
   "benefit": {
     "title": "Why Choose Our China Tours",
     "description": "Experience China like never before with our local expertise and personalized approach",
