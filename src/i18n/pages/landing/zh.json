@@ -1,46 +1,51 @@
 {
-  "template": "shipany-template-one",
+  "template": "china-tour-website",
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "中国旅游",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "中国旅游"
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "功能特点",
-          "url": "/#feature",
-          "icon": "RiSparkling2Line"
+          "title": "旅游线路",
+          "url": "/tours",
+          "icon": "MapPin"
         },
         {
-          "title": "定价",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
+          "title": "目的地",
+          "url": "/destinations",
+          "icon": "Globe"
         },
         {
-          "title": "案例展示",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
+          "title": "定制旅行",
+          "url": "/custom-trip",
+          "icon": "Route"
         },
         {
-          "title": "文档",
-          "url": "/docs",
-          "icon": "RiBookOpenLine"
+          "title": "论坛",
+          "url": "/forum",
+          "icon": "MessageCircle"
+        },
+        {
+          "title": "博客",
+          "url": "/blog",
+          "icon": "BookOpen"
         }
       ]
     },
     "buttons": [
       {
-        "title": "获取 ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "variant": "link",
-        "icon": "RiArrowRightUpLine"
+        "title": "获取报价",
+        "url": "/custom-trip",
+        "target": "_self",
+        "variant": "default",
+        "icon": "MessageSquare"
       }
     ],
     "show_sign": true,
@@ -48,456 +53,368 @@
     "show_locale": true
   },
   "hero": {
-    "title": "几小时内快速构建 AI 创业项目，而不是几天",
-    "highlight_text": "快速构建",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。<br/>通过丰富的模板和组件快速启动。",
+    "title": "发现您的完美中国之旅",
+    "highlight_text": "完美中国",
+    "description": "从古代奇迹到现代奇观，通过我们的定制旅游和数字旅行指南创造难忘的回忆。<br/>专业的本地知识、个性化行程和全天候支持。",
     "announcement": {
-      "label": "2025",
-      "title": "🎉 新年快乐",
-      "url": "/pricing"
+      "label": "新功能",
+      "title": "🎉 数字城市指南现已推出 - 立即下载！",
+      "url": "/tours?type=digital"
     },
-    "tip": "🎁 2025年前五折优惠",
+    "tip": "✈️ 超过10,000名旅行者通过我们探索中国",
     "buttons": [
       {
-        "title": "立即开始",
-        "icon": "RiFlashlightFill",
-        "url": "/pricing",
+        "title": "探索旅游线路",
+        "icon": "MapPin",
+        "url": "/tours",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "阅读文档",
-        "icon": "RiBookOpenLine",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "创建定制行程",
+        "icon": "Route",
+        "url": "/custom-trip",
+        "target": "_self",
         "variant": "outline"
       }
     ],
-    "show_happy_users": true,
-    "show_badge": false
+    "show_badge": false,
+    "show_happy_users": true
   },
   "branding": {
-    "title": "ShipAny 建立在巨人的肩膀上",
+    "title": "受到全球旅行者信赖",
     "items": [
       {
-        "title": "Next.js",
+        "title": "TripAdvisor",
         "image": {
-          "src": "/imgs/logos/nextjs.svg",
-          "alt": "Next.js"
+          "src": "/imgs/logos/tripadvisor.svg",
+          "alt": "TripAdvisor"
         }
       },
       {
-        "title": "React",
+        "title": "Booking.com",
         "image": {
-          "src": "/imgs/logos/react.svg",
-          "alt": "React"
+          "src": "/imgs/logos/booking.svg",
+          "alt": "Booking.com"
         }
       },
       {
-        "title": "TailwindCSS",
+        "title": "Lonely Planet",
         "image": {
-          "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "TailwindCSS"
+          "src": "/imgs/logos/lonelyplanet.svg",
+          "alt": "Lonely Planet"
         }
       },
       {
-        "title": "Shadcn/UI",
+        "title": "Expedia",
         "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "Shadcn/UI"
-        }
-      },
-      {
-        "title": "Vercel",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "Vercel"
+          "src": "/imgs/logos/expedia.svg",
+          "alt": "Expedia"
         }
       }
     ]
   },
-  "introduce": {
-    "name": "introduce",
-    "title": "什么是 ShipAny",
-    "label": "介绍",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板，内置多种模板和组件。",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "items": [
-      {
-        "title": "即用型模板",
-        "description": "从数十个生产就绪的 AI SaaS 模板中选择，快速启动您的项目。",
-        "icon": "RiNextjsFill"
-      },
-      {
-        "title": "基础设施配置",
-        "description": "立即获取内置最佳实践的可扩展基础设施。",
-        "icon": "RiDatabase2Line"
-      },
-      {
-        "title": "快速部署",
-        "description": "在几小时内将您的 AI SaaS 应用部署到生产环境，而不是几天。",
-        "icon": "RiCloudyFill"
-      }
-    ]
-  },
+  
   "benefit": {
-    "name": "benefit",
-    "title": "为什么选择 ShipAny",
-    "label": "优势",
-    "description": "获取启动 AI 创业所需的一切 - 从即用型模板到技术支持。",
+    "title": "为什么选择我们的中国旅游",
+    "description": "通过我们的本地专业知识和个性化服务，体验前所未有的中国之旅",
     "items": [
       {
-        "title": "完整框架",
-        "description": "基于 Next.js 构建，集成身份验证、支付和 AI 功能 - 一切开箱即用。",
-        "icon": "RiNextjsFill",
-        "image": {
-          "src": "/imgs/features/2.png"
-        }
+        "title": "本地专业导游",
+        "description": "具有深厚文化知识和语言能力的中文母语导游",
+        "icon": "UserCheck"
       },
       {
-        "title": "丰富的模板库",
-        "description": "选择各种 AI SaaS 模板来启动您的项目 - 聊天机器人、图像生成等。",
-        "icon": "RiClapperboardAiLine",
-        "image": {
-          "src": "/imgs/features/3.png"
-        }
+        "title": "定制行程",
+        "description": "每次旅行都根据您的兴趣、预算和旅行风格量身定制",
+        "icon": "Route"
       },
       {
-        "title": "技术指导",
-        "description": "获得专门支持并加入我们的开发者社区，确保您成功启动。",
-        "icon": "RiCodeFill",
-        "image": {
-          "src": "/imgs/features/4.png"
-        }
+        "title": "最优价格保证",
+        "description": "我们匹配任何竞争对手的价格，并经常以附加价值超越",
+        "icon": "DollarSign"
+      },
+      {
+        "title": "全天候支持",
+        "description": "在您旅行之前、期间和之后提供全天候协助",
+        "icon": "Phone"
       }
     ]
   },
   "usage": {
-    "name": "usage",
-    "title": "如何使用 ShipAny 启动项目",
-    "description": "通过三个简单步骤启动您的 AI SaaS 创业项目：",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "image_position": "left",
-    "text_align": "center",
+    "title": "热门中国目的地",
+    "description": "探索中国最受欢迎的目的地",
     "items": [
       {
-        "title": "获取 ShipAny",
-        "description": "一次性付款购买 ShipAny。查收邮件获取代码和文档。",
+        "title": "北京",
+        "description": "拥有长城、紫禁城和丰富帝国历史的古都",
         "image": {
-          "src": "/imgs/features/5.png"
-        }
+          "src": "/imgs/destinations/beijing.jpg",
+          "alt": "北京"
+        },
+        "url": "/destinations/beijing"
       },
       {
-        "title": "开始您的项目",
-        "description": "阅读文档并克隆 ShipAny 代码。开始构建您的 AI SaaS 创业项目。",
+        "title": "上海",
+        "description": "融合东方传统与西方创新的现代大都市",
         "image": {
-          "src": "/imgs/features/6.png"
-        }
+          "src": "/imgs/destinations/shanghai.jpg",
+          "alt": "上海"
+        },
+        "url": "/destinations/shanghai"
       },
       {
-        "title": "定制您的项目",
-        "description": "使用您的数据和内容修改模板。满足特定的 AI 功能需求。",
+        "title": "西安",
+        "description": "兵马俑的故乡和古代丝绸之路历史",
         "image": {
-          "src": "/imgs/features/7.png"
-        }
+          "src": "/imgs/destinations/xian.jpg",
+          "alt": "西安"
+        },
+        "url": "/destinations/xian"
       },
       {
-        "title": "部署到生产环境",
-        "description": "通过几个步骤将项目部署到生产环境，立即开始服务客户。",
+        "title": "桂林",
+        "description": "令人惊叹的喀斯特地貌和漓江游船体验",
         "image": {
-          "src": "/imgs/features/8.png"
-        }
+          "src": "/imgs/destinations/guilin.jpg",
+          "alt": "桂林"
+        },
+        "url": "/destinations/guilin"
+      },
+      {
+        "title": "成都",
+        "description": "熊猫之都和四川美食文化的门户",
+        "image": {
+          "src": "/imgs/destinations/chengdu.jpg",
+          "alt": "成都"
+        },
+        "url": "/destinations/chengdu"
+      },
+      {
+        "title": "重庆",
+        "description": "以火锅和长江游轮闻名的山城",
+        "image": {
+          "src": "/imgs/destinations/chongqing.jpg",
+          "alt": "重庆"
+        },
+        "url": "/destinations/chongqing"
       }
     ]
   },
   "feature": {
-    "name": "feature",
-    "title": "ShipAny 核心功能",
-    "description": "快速高效启动 AI SaaS 创业所需的一切。",
+    "title": "完整的中国旅游解决方案",
+    "description": "难忘的中国冒险所需的一切",
     "items": [
       {
-        "title": "Next.js 模板",
-        "description": "生产就绪的 Next.js 模板，支持 SEO 友好结构和国际化。",
-        "icon": "RiNextjsFill"
+        "title": "签证协助",
+        "description": "中国签证申请和要求的完整指导",
+        "icon": "FileText"
       },
       {
-        "title": "身份验证和支付",
-        "description": "集成 Google OAuth、一键登录和 Stripe 支付处理。",
-        "icon": "RiKey2Fill"
+        "title": "文化准备",
+        "description": "旅行前学习必要的习俗、短语和礼仪",
+        "icon": "BookOpen"
       },
       {
-        "title": "数据基础设施",
-        "description": "内置 Supabase 集成，提供可靠和可扩展的数据存储。",
-        "icon": "RiDatabase2Line"
+        "title": "交通安排",
+        "description": "高铁预订、国内航班和当地接送",
+        "icon": "Train"
       },
       {
-        "title": "一键部署",
-        "description": "无缝部署到 Vercel 或 Cloudflare，自动化设置。",
-        "icon": "RiCloudy2Fill"
+        "title": "住宿安排",
+        "description": "在所有目的地精心挑选的从经济型到豪华型酒店",
+        "icon": "Building"
       },
       {
-        "title": "业务分析",
-        "description": "集成 Google Analytics 和 Search Console 追踪增长。",
-        "icon": "RiBarChart2Line"
+        "title": "美食体验",
+        "description": "与当地专家一起的正宗用餐体验和美食之旅",
+        "icon": "UtensilsCrossed"
       },
       {
-        "title": "AI 就绪基础设施",
-        "description": "预配置 AI 集成，内置积分系统和 API 销售。",
-        "icon": "RiRobot2Line"
+        "title": "紧急支持",
+        "description": "全中国范围内的24/7紧急援助和当地联系人",
+        "icon": "Shield"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "精选旅游线路和体验",
+    "description": "我们最受欢迎的中国旅游和数字指南",
+    "items": [
+      {
+        "title": "经典中国探索",
+        "description": "14天 • 北京 → 西安 → 上海",
+        "image": {
+          "src": "/imgs/showcases/classic-china.jpg",
+          "alt": "经典中国探索"
+        },
+        "price": "起价 ¥15,999",
+        "rating": "4.9",
+        "type": "旅游服务"
+      },
+      {
+        "title": "完整北京指南",
+        "description": "数字PDF • 120页",
+        "image": {
+          "src": "/imgs/showcases/beijing-guide.jpg",
+          "alt": "完整北京指南"
+        },
+        "price": "¥139",
+        "rating": "4.8",
+        "type": "数字指南"
+      },
+      {
+        "title": "长江游轮",
+        "description": "8天 • 重庆 → 上海",
+        "image": {
+          "src": "/imgs/showcases/yangtze-cruise.jpg",
+          "alt": "长江游轮"
+        },
+        "price": "起价 ¥13,299",
+        "rating": "4.7",
+        "type": "旅游服务"
       }
     ]
   },
   "stats": {
-    "name": "stats",
-    "label": "统计",
-    "title": "用户喜爱 ShipAny",
-    "description": "因为它易于使用且快速发布。",
-    "icon": "FaRegHeart",
+    "title": "受到全球旅行者信赖",
     "items": [
       {
-        "title": "信任",
-        "label": "99+",
-        "description": "客户"
+        "number": "10,000+",
+        "label": "满意旅行者"
       },
       {
-        "title": "内置",
-        "label": "20+",
-        "description": "组件"
+        "number": "98%",
+        "label": "满意度"
       },
       {
-        "title": "快速发布",
-        "label": "5",
-        "description": "分钟"
+        "number": "50+",
+        "label": "中国目的地"
+      },
+      {
+        "number": "24/7",
+        "label": "全天候支持"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "选择您的中国冒险",
+    "description": "独立旅行者的数字指南或专家指导的全服务旅游",
+    "plans": [
+      {
+        "name": "数字指南",
+        "description": "独立旅行者的完美选择",
+        "price": "¥139",
+        "billing": "每本指南",
+        "features": [
+          "即时PDF下载",
+          "详细城市地图",
+          "餐厅推荐",
+          "文化贴士和短语",
+          "交通指南",
+          "30天退款保证"
+        ],
+        "cta": "浏览指南",
+        "url": "/tours?type=digital",
+        "popular": false
+      },
+      {
+        "name": "定制旅游",
+        "description": "完全个性化的中国体验",
+        "price": "¥10,999",
+        "billing": "起价",
+        "features": [
+          "个人旅行协调员",
+          "定制行程规划",
+          "本地专家导游",
+          "包含所有住宿",
+          "交通安排",
+          "旅行期间24/7支持",
+          "灵活修改",
+          "团体折扣"
+        ],
+        "cta": "请求报价",
+        "url": "/custom-trip",
+        "popular": true
+      },
+      {
+        "name": "旅行规划",
+        "description": "专业咨询服务",
+        "price": "¥699",
+        "billing": "每次咨询",
+        "features": [
+          "1小时视频咨询",
+          "个性化推荐",
+          "行程审查",
+          "预算优化",
+          "签证指导",
+          "旅行贴士和见解"
+        ],
+        "cta": "预订咨询",
+        "url": "/consultation",
+        "popular": false
       }
     ]
   },
   "testimonial": {
-    "name": "testimonial",
-    "label": "用户评价",
-    "title": "用户如何评价 ShipAny",
-    "description": "听听使用 ShipAny 启动 AI 创业项目的开发者和创始人怎么说。",
-    "icon": "GoThumbsup",
+    "title": "旅行者说",
+    "description": "真实旅行者的真实体验",
     "items": [
       {
-        "title": "陈大卫",
-        "label": "AIWallpaper.shop 创始人",
-        "description": "ShipAny 为我们节省了数月的开发时间。我们仅用 2 天就启动了 AI 壁纸业务，一周内就获得了第一个付费客户！",
-        "image": {
-          "src": "/imgs/users/1.png"
-        }
+        "content": "北京数字指南非常详细，为我们节省了很多时间。餐厅推荐非常准确！",
+        "author": "李莎",
+        "role": "独立旅行者",
+        "avatar": "/imgs/users/sarah.jpg",
+        "rating": 5
       },
       {
-        "title": "金瑞秋",
-        "label": "HeyBeauty.ai 技术总监",
-        "description": "预构建的 AI 基础设施是一个游戏规则改变者。我们无需担心架构 - 只需专注于 AI 美容技术并快速上线。",
-        "image": {
-          "src": "/imgs/users/2.png"
-        }
+        "content": "我们的12天定制旅游超出了所有期望。我们的导游知识渊博，行程完美平衡了必看景点和当地体验。",
+        "author": "陈明",
+        "role": "家庭度假",
+        "avatar": "/imgs/users/michael.jpg",
+        "rating": 5
       },
       {
-        "title": "马库斯",
-        "label": "独立开发者",
-        "description": "作为独立开发者，ShipAny 给了我所需的一切 - 身份验证、支付、AI 集成和漂亮的 UI。一个周末就启动了我的 SaaS！",
-        "image": {
-          "src": "/imgs/users/3.png"
-        }
-      },
-      {
-        "title": "索菲亚",
-        "label": "Melodisco CEO",
-        "description": "这些模板可直接用于生产且高度可定制。我们用几小时而不是几个月就建立了 AI 音乐平台。上市时间令人难以置信！",
-        "image": {
-          "src": "/imgs/users/4.png"
-        }
-      },
-      {
-        "title": "詹姆斯",
-        "label": "GPTs.works 技术主管",
-        "description": "ShipAny 的基础设施非常稳固。我们从 0 扩展到 1 万用户都没碰后端。这是我们 AI 创业最好的投资。",
-        "image": {
-          "src": "/imgs/users/5.png"
-        }
-      },
-      {
-        "title": "张安娜",
-        "label": "创业者",
-        "description": "从想法到上线只用了 3 天！ShipAny 的模板和部署工具让我们能够以令人难以置信的速度测试 AI 业务概念。",
-        "image": {
-          "src": "/imgs/users/6.png"
-        }
+        "content": "24/7支持在我们的航班延误时救了我们。他们无缝地重新安排了我们的整个行程。",
+        "author": "王艾玛",
+        "role": "独自旅行者",
+        "avatar": "/imgs/users/emma.jpg",
+        "rating": 5
       }
     ]
   },
   "faq": {
-    "name": "faq",
-    "label": "常见问题",
-    "title": "关于 ShipAny 的常见问题",
-    "description": "还有其他问题？通过 Discord 或电子邮件联系我们。",
+    "title": "常见问题",
+    "description": "关于中国旅行您需要了解的一切",
     "items": [
       {
-        "title": "ShipAny 究竟是什么，它是如何工作的？",
-        "description": "ShipAny 是一个专门为构建 AI SaaS 创业项目设计的综合性 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
+        "question": "访问中国需要签证吗？",
+        "answer": "大多数旅行者需要签证才能进入中国。我们提供完整的签证协助和申请流程指导。某些城市在一定期限内提供过境免签。"
       },
       {
-        "title": "使用 ShipAny 需要高级技术技能吗？",
-        "description": "虽然基本的编程知识会有帮助，但 ShipAny 设计得非常开发者友好。我们的模板和文档使您即使不是 AI 或云基础设施专家也能轻松入门。"
+        "question": "定制旅游套餐包含什么？",
+        "answer": "我们的定制旅游包括住宿、交通、导游、门票费和24/7支持。餐食可根据您的偏好包含。国际航班通常不包含在内。"
       },
       {
-        "title": "我可以用 ShipAny 构建什么类型的 AI SaaS？",
-        "description": "ShipAny 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖流行用例，如 AI 聊天机器人、内容生成器、图像处理应用等。"
+        "question": "我应该提前多久预订？",
+        "answer": "我们建议至少提前4-6周预订定制旅游，以确保可用性和签证处理时间。数字指南可即时下载。"
       },
       {
-        "title": "使用 ShipAny 通常需要多长时间才能启动？",
-        "description": "使用 ShipAny，您可以在几小时内完成工作原型，并在几小时内完成生产就绪的应用。我们的一键部署和预配置基础设施显著缩短了传统的数月开发周期。"
+        "question": "您能适应饮食限制吗？",
+        "answer": "当然可以！我们与当地餐厅和酒店合作，满足所有饮食需求，包括素食、清真、犹太教和过敏要求。"
       },
       {
-        "title": "ShipAny 的基础设施包括什么？",
-        "description": "ShipAny 提供完整的基础设施栈，包括身份验证、数据库设置、API 集成、支付处理和可扩展的云部署。一切都按照行业最佳实践预先配置。"
-      },
-      {
-        "title": "我可以自定义模板以匹配我的品牌吗？",
-        "description": "当然可以！所有 ShipAny 模板都完全可定制。您可以修改设计、功能和功能性以匹配您的品牌标识和特定业务需求，同时保持强大的底层基础设施。"
+        "question": "如果我需要取消旅游怎么办？",
+        "answer": "我们提供灵活的取消政策。数字产品有30天退款保证。定制旅游根据时间有不同的取消条款 - 我们的条款中有完整详情。"
       }
     ]
   },
   "cta": {
-    "name": "cta",
-    "title": "启动您的第一个 AI SaaS 创业项目",
-    "description": "从这里开始，使用 ShipAny 启动。",
-    "buttons": [
-      {
-        "title": "获取 ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "icon": "GoArrowUpRight"
-      },
-      {
-        "title": "阅读文档",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
-        "variant": "outline"
-      }
-    ]
-  },
-  "footer": {
-    "name": "footer",
-    "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。通过丰富的模板和组件快速启动。",
-      "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
-      },
-      "url": "/"
-    },
-    "copyright": "© 2025 • ShipAny 保留所有权利。",
-    "nav": {
-      "items": [
-        {
-          "title": "关于",
-          "children": [
-            {
-              "title": "功能特点",
-              "url": "/#feature",
-              "target": "_self"
-            },
-            {
-              "title": "案例展示",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
-              "title": "定价",
-              "url": "/#pricing",
-              "target": "_self"
-            }
-          ]
-        },
-        {
-          "title": "资源",
-          "children": [
-            {
-              "title": "文档",
-              "url": "https://docs.shipany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "组件",
-              "url": "https://shipany.ai/components",
-              "target": "_blank"
-            },
-            {
-              "title": "模板",
-              "url": "https://shipany.ai/templates",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "title": "友情链接",
-          "children": [
-            {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
-            }
-          ]
-        }
-      ]
-    },
-    "social": {
-      "items": [
-        {
-          "title": "X",
-          "icon": "RiTwitterXFill",
-          "url": "https://x.com/shipanyai",
-          "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "RiGithubFill",
-          "url": "https://github.com/shipanyai",
-          "target": "_blank"
-        },
-        {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/HQNnrzjZQS",
-          "target": "_blank"
-        },
-        {
-          "title": "邮箱",
-          "icon": "RiMailLine",
-          "url": "mailto:support@shipany.ai",
-          "target": "_self"
-        }
-      ]
-    },
-    "agreement": {
-      "items": [
-        {
-          "title": "隐私政策",
-          "url": "/privacy-policy"
-        },
-        {
-          "title": "服务条款",
-          "url": "/terms-of-service"
-        }
-      ]
+    "title": "准备探索中国？",
+    "description": "今天开始规划您难忘的中国冒险",
+    "button": {
+      "title": "立即开始规划",
+      "url": "/tours"
     }
   }
 }
