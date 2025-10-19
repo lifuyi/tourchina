@@ -4,7 +4,7 @@ import { db } from "@/db";
 import { forum_topics, forum_categories, users } from "@/db/schema";
 import { getUuid } from "@/lib/hash";
 import { getIsoTimestr } from "@/lib/time";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, sql } from "drizzle-orm";
 
 // Create new topic
 export async function POST(request: NextRequest) {
@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     const now = getIsoTimestr();
 
     // Insert new topic
-    const [newTopic] = await db.insert(forum_topics).values({
+    const [newTopic] = await db().insert(forum_topics).values({
       uuid: topicUuid,
       title,
       slug,
@@ -46,16 +46,14 @@ export async function POST(request: NextRequest) {
       category_uuid,
       author_uuid: session.user.uuid,
       tags: tags ? JSON.stringify(tags) : null,
-      created_at: now,
-      updated_at: now,
     }).returning();
 
     // Update category counts (in real app, use triggers or background jobs)
-    await db.update(forum_categories)
+    await db().update(forum_categories)
       .set({
-        topic_count: forum_categories.topic_count + 1,
-        post_count: forum_categories.post_count + 1,
-        last_post_at: now,
+        topic_count: sql`${forum_categories.topic_count} + 1`,
+        post_count: sql`${forum_categories.post_count} + 1`,
+        last_post_at: sql`NOW()`,
         last_post_by: session.user.uuid,
       })
       .where(eq(forum_categories.uuid, category_uuid));
@@ -84,7 +82,7 @@ export async function GET(request: NextRequest) {
     const offset = parseInt(searchParams.get("offset") || "0");
 
     // Build query (simplified - in real app use proper joins)
-    const topics = await db.select()
+    const topics = await db().select()
       .from(forum_topics)
       .where(eq(forum_topics.status, "active"))
       .orderBy(desc(forum_topics.created_at))

@@ -88,7 +88,7 @@ export default function Header({ header }: { header: HeaderType }) {
                                       className={cn(
                                         "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                                       )}
-                                      href={iitem.url as any}
+                                      href={iitem.url || "#"}
                                       target={iitem.target}
                                     >
                                       {iitem.icon && (

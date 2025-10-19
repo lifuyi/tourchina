@@ -36,7 +36,7 @@ export default function ({ crumb }: { crumb?: Crumb }) {
                     <Fragment key={index}>
                       <BreadcrumbItem className="hidden md:block">
                         <Link
-                          href={item.url || ""}
+                          href={item.url || "#"}
                           className="hover:text-primary"
                         >
                           {item.title}

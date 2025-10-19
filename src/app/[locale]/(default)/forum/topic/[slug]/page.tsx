@@ -6,14 +6,15 @@ import TopicReplies from "@/components/blocks/forum/topic-replies";
 import ReplyForm from "@/components/blocks/forum/reply-form";
 
 interface Props {
-  params: {
+  params: Promise<{
     slug: string;
     locale: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  // In real app, fetch topic data
+  const { slug } = await params;
+  // In real app, fetch topic data using slug
   const topic = {
     title: "First time visiting Beijing - need advice on 5-day itinerary",
     description: "Planning my first trip to Beijing and looking for advice on the best 5-day itinerary..."
@@ -25,8 +26,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function TopicPage({ params }: Props) {
-  // Mock data - in real app, fetch from API using params.slug
+export default async function TopicPage({ params }: Props) {
+  const { slug } = await params;
+  // Mock data - in real app, fetch from API using slug
   const topicExists = true;
 
   if (!topicExists) {
@@ -38,19 +40,19 @@ export default function TopicPage({ params }: Props) {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Topic Detail */}
         <Suspense fallback={<div>Loading topic...</div>}>
-          <TopicDetail slug={params.slug} />
+          <TopicDetail slug={slug} />
         </Suspense>
 
         {/* Topic Replies */}
         <div className="mt-8">
           <Suspense fallback={<div>Loading replies...</div>}>
-            <TopicReplies slug={params.slug} />
+            <TopicReplies slug={slug} />
           </Suspense>
         </div>
 
         {/* Reply Form */}
         <div className="mt-8">
-          <ReplyForm topicSlug={params.slug} />
+          <ReplyForm topicSlug={slug} />
         </div>
       </div>
     </div>

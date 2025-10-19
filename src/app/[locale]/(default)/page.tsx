@@ -24,9 +24,48 @@ export async function generateMetadata({
     canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}`;
   }
 
+  const isEnglish = locale === 'en';
+  
   return {
+    title: isEnglish 
+      ? "China Travel Expert - Authentic China Tours & Cultural Experiences"
+      : "中国旅游专家 - 正宗中国旅游和文化体验",
+    description: isEnglish
+      ? "Discover authentic China with expert-curated tours, local guides, and comprehensive travel resources. From the Great Wall to modern Shanghai - plan your perfect China adventure with personalized itineraries."
+      : "通过专家策划的旅游、当地导游和全面的旅游资源发现真正的中国。从长城到现代上海 - 用个性化行程规划您完美的中国冒险之旅。",
+    keywords: isEnglish
+      ? "China travel, China tours, Beijing tours, Shanghai travel, Great Wall tours, China travel guide, Chinese culture, Asia travel, custom China tours, China vacation packages, Forbidden City, Terracotta Warriors, Li River cruise, Chinese food tours"
+      : "中国旅游, 中国旅行团, 北京旅游, 上海旅行, 长城旅游, 中国旅游指南, 中国文化, 亚洲旅行, 定制中国旅游, 中国度假套餐",
     alternates: {
       canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: isEnglish 
+        ? "China Travel Expert - Authentic China Tours & Cultural Experiences"
+        : "中国旅游专家 - 正宗中国旅游和文化体验",
+      description: isEnglish
+        ? "Discover authentic China with expert-curated tours, local guides, and comprehensive travel resources. Plan your perfect China adventure."
+        : "通过专家策划的旅游和当地导游发现真正的中国。规划您完美的中国冒险之旅。",
+      url: canonicalUrl,
+      type: "website",
+      images: [
+        {
+          url: "/imgs/showcases/classic-china.jpg",
+          width: 1200,
+          height: 630,
+          alt: isEnglish ? "Beautiful China landscapes and cultural sites" : "美丽的中国风景和文化遗址",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: isEnglish 
+        ? "China Travel Expert - Authentic China Tours & Cultural Experiences"
+        : "中国旅游专家 - 正宗中国旅游和文化体验",
+      description: isEnglish
+        ? "Discover authentic China with expert tours and local guides. Plan your perfect adventure."
+        : "通过专家旅游和当地导游发现真正的中国。规划您完美的冒险之旅。",
+      images: ["/imgs/showcases/classic-china.jpg"],
     },
   };
 }

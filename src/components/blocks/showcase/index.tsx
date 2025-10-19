@@ -22,7 +22,7 @@ export default function Showcase({ section }: { section: SectionType }) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {section.items?.map((item, index) => (
-          <Link key={index} href={item.url || ""} target={item.target}>
+          <Link key={index} href={item.url || "#"} target={item.target}>
             <Card className="overflow-hidden transition-all hover:shadow-lg dark:hover:shadow-primary/10 p-0">
               <CardContent className="p-0">
                 <div className="relative aspect-[16/10] w-full overflow-hidden">

@@ -10,7 +10,7 @@ export default function Crumb({ items }: { items: NavItem[] }) {
         return (
           <div key={index} className="flex items-center">
             <Link
-              href={item.url || ""}
+              href={item.url || "#"}
               className={`hover:text-foreground transition-colors ${
                 isActive ? "text-primary font-medium hover:text-primary" : ""
               }`}
