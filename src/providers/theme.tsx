@@ -13,9 +13,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const locale = useLocale();
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      document.documentElement.lang = locale;
-    }
+    document.documentElement.lang = locale;
   }, [locale]);
 
   return (

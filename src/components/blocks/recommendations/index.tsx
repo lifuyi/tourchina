@@ -159,7 +159,9 @@ export default function Recommendations({
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
     // In real app, this would fetch new recommendations
-    setRecommendations([...recommendations].sort(() => Math.random() - 0.5));
+    if (typeof window !== 'undefined') {
+      setRecommendations([...recommendations].sort(() => Math.random() - 0.5));
+    }
     setIsRefreshing(false);
   };
 

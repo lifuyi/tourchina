@@ -91,7 +91,7 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className={cn("min-h-screen bg-background font-sans antialiased")}>{children}</body>
+      <body className={cn("min-h-screen bg-background font-sans antialiased")} suppressHydrationWarning={true}>{children}</body>
     </html>
   );
 }
