@@ -1,0 +1,19 @@
+
+> shipany-template-one@2.6.0 dev /Users/eyeopen/Downloads/projects/tourchina
+> cross-env NODE_NO_WARNINGS=1 next dev --turbopack
+
+[MDX] updated map file in 5.3599590000000035ms
+[MDX] started dev server
+   ▲ Next.js 15.2.3 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.3.34:3000
+   - Environments: .env.development
+   - Experiments (use with caution):
+     · turbo
+
+ ✓ Starting...
+ ⚠ Invalid next.config.mjs options detected: 
+ ⚠     Unrecognized key(s) in object: 'turbopack'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Compiled in 193ms
+ ✓ Ready in 970ms
