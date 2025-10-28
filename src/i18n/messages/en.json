@@ -1,0 +1,72 @@
+{
+  "site": {
+    "name": "China Tour Guide",
+    "description": "Your complete guide to traveling China independently. 200+ pages of practical advice from real travelers.",
+    "url": "https://chinatourguide.com"
+  },
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "my_orders": "My Orders",
+    "sign_in": "Sign In",
+    "sign_out": "Sign Out"
+  },
+  "hero": {
+    "get_started": "Get the Guide",
+    "learn_more": "Learn More"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "get_guide": "Get the Guide",
+    "one_time": "One-time payment",
+    "lifetime_updates": "Lifetime updates included"
+  },
+  "orders": {
+    "title": "My Orders",
+    "order_number": "Order #",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "download": "Download PDF",
+    "no_orders": "You haven't purchased the guide yet.",
+    "get_guide": "Get the Guide"
+  },
+  "my_orders": {
+    "title": "My Orders",
+    "table": {
+      "order_no": "Order #",
+      "email": "Email",
+      "product_name": "Product",
+      "amount": "Amount",
+      "interval": "Type",
+      "interval_month": "Monthly",
+      "interval_year": "Yearly",
+      "interval_one_time": "One-time",
+      "paid_at": "Date",
+      "manage_billing": "Manage",
+      "download_guide": "Download PDF"
+    },
+    "no_orders": "You haven't purchased the guide yet.",
+    "read_docs": "Get the Guide"
+  },
+  "auth": {
+    "sign_in": "Sign In",
+    "sign_out": "Sign Out",
+    "sign_in_with_google": "Sign in with Google",
+    "sign_in_required": "Please sign in to continue"
+  },
+  "footer": {
+    "description": "Your complete guide to traveling China independently.",
+    "copyright": "© 2025 China Tour Guide. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "download": "Download",
+    "close": "Close",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  }
+}

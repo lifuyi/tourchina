@@ -1,0 +1,58 @@
+{
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about the China Tour Guide. Have another question? Contact us at support@chinatourguide.com",
+    "items": [
+      {
+        "title": "What format is the guide in?",
+        "description": "The guide is a downloadable PDF file that works on any device - your phone, tablet, laptop, or e-reader. It's designed to be read offline, so you can access it anytime during your trip without internet."
+      },
+      {
+        "title": "Can I access it offline?",
+        "description": "Yes! Once you download the PDF, you can access it completely offline. This is especially important in China where internet access can be restricted. We recommend downloading it to your device before your trip."
+      },
+      {
+        "title": "How do I download the guide after purchase?",
+        "description": "After completing your purchase, you'll be redirected to your account page where you can download the PDF immediately. You'll also receive an email with a download link. You can re-download anytime from your account at chinatourguide.com/my-orders"
+      },
+      {
+        "title": "Is the guide updated? How often?",
+        "description": "The guide is currently updated for 2025 with information accurate as of our latest trip in late 2024. We update the guide quarterly (every 3 months) to keep information current, especially for visa requirements, apps, and payment methods that change frequently."
+      },
+      {
+        "title": "Do I get free updates?",
+        "description": "Yes! All updates are completely free forever. When we release a new version, we'll email you and you can download the updated guide from your account. No additional payment required - it's our promise to you."
+      },
+      {
+        "title": "What if I lose the file?",
+        "description": "No problem! You can log into your account anytime at chinatourguide.com/my-orders and re-download the guide. Your purchase is tied to your account, not the file, so you'll always have access."
+      },
+      {
+        "title": "Can I share it with my travel partner?",
+        "description": "The guide is for personal use. If you're traveling with a partner, we appreciate if they purchase their own copy to support our work. However, we understand couples often share resources - just please don't post it publicly online."
+      },
+      {
+        "title": "Do you offer refunds?",
+        "description": "Yes, we offer a 30-day money-back guarantee. If you're not satisfied with the guide for any reason, email us within 30 days of purchase and we'll refund you in full, no questions asked."
+      },
+      {
+        "title": "What payment methods do you accept?",
+        "description": "We accept all major credit cards (Visa, Mastercard, American Express), as well as digital payment methods through our secure payment processor. All transactions are encrypted and secure."
+      },
+      {
+        "title": "How is this different from free online resources?",
+        "description": "Free resources are scattered across blogs, forums, and outdated websites. Our guide consolidates everything you need in one place, with step-by-step tutorials, troubleshooting guides, and practical advice based on real experience. It saves you dozens of hours of research and stress during your trip."
+      },
+      {
+        "title": "Is the content AI-generated?",
+        "description": "Absolutely not. Every word is written by real travelers who spent weeks in China navigating the challenges firsthand. We used AI for nothing - just real experiences, real photos, and real advice that actually works."
+      },
+      {
+        "title": "How can I contact support?",
+        "description": "Email us anytime at support@chinatourguide.com and we'll respond within 24-48 hours. We're here to help with any questions about the guide, your purchase, or your travel plans."
+      }
+    ]
+  }
+}

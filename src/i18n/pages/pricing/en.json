@@ -1,0 +1,57 @@
+{
+  "pricing": {
+    "name": "pricing",
+    "label": "Pricing",
+    "title": "Get Your Complete China Travel Guide",
+    "description": "Everything you need to travel China with confidence. One-time payment, lifetime updates included.",
+    "groups": [
+      {
+        "name": "one-time",
+        "title": "One-Time Payment",
+        "is_featured": true
+      }
+    ],
+    "items": [
+      {
+        "title": "China Tour Guide 2025",
+        "description": "Complete digital travel guide - 200+ pages of practical advice from real travelers",
+        "label": "Launch Price",
+        "features_title": "Everything Included",
+        "features": [
+          "200+ page comprehensive PDF guide",
+          "Detailed city itineraries & maps",
+          "Transportation tutorials (trains, metro, taxis, apps)",
+          "Visa & entry requirements guide",
+          "Payment methods setup (Alipay, WeChat Pay)",
+          "Essential apps & VPN setup guide",
+          "Cultural tips & etiquette",
+          "Language basics & useful phrases",
+          "Food & dining recommendations",
+          "Accommodation booking tips",
+          "Safety tips & emergency contacts",
+          "Troubleshooting common travel issues",
+          "Lifetime updates - free forever",
+          "Instant download after purchase"
+        ],
+        "interval": "one-time",
+        "amount": 2900,
+        "currency": "USD",
+        "price": "$29",
+        "original_price": "$49",
+        "unit": "one-time",
+        "is_featured": true,
+        "tip": "Launch price - includes lifetime updates! 🎉",
+        "button": {
+          "title": "Get the Guide",
+          "url": "/pricing",
+          "icon": "RiDownloadLine"
+        },
+        "product_id": "china-guide",
+        "product_name": "China Tour Guide 2025 - Complete Travel Guide",
+        "credits": 0,
+        "valid_months": 0,
+        "group": "one-time"
+      }
+    ]
+  }
+}

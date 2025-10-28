@@ -1,0 +1,386 @@
+{
+  "template": "china-tour-guide",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "China Tour Guide",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "China Tour Guide"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Home",
+          "url": "/",
+          "icon": "RiHome5Line"
+        },
+        {
+          "title": "Pricing",
+          "url": "/pricing",
+          "icon": "RiMoneyDollarCircleLine"
+        },
+        {
+          "title": "FAQ",
+          "url": "/faq",
+          "icon": "RiQuestionLine"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Get the Guide - $29",
+        "url": "/pricing",
+        "target": "_self",
+        "variant": "default",
+        "icon": "RiDownloadLine"
+      }
+    ],
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": false
+  },
+  "hero": {
+    "title": "Travel China with Confidence in 2025",
+    "highlight_text": "Travel China",
+    "description": "A complete, honest travel guide created by real travelers. 200+ pages of practical advice, tutorials, and troubleshooting. No AI fluff, just real experience.",
+    "announcement": {
+      "label": "New",
+      "title": "🎉 Updated for 2025",
+      "url": "/pricing"
+    },
+    "tip": "🎁 Launch price $29 - Lifetime updates included",
+    "buttons": [
+      {
+        "title": "Get the Guide - $29",
+        "icon": "RiDownloadLine",
+        "url": "/pricing",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "See What's Inside",
+        "icon": "RiArrowDownLine",
+        "url": "/#features",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "stats": {
+    "name": "stats",
+    "label": "By the Numbers",
+    "title": "Trusted by Independent Travelers",
+    "description": "Real guide, real experience, real results",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "Content",
+        "label": "200+",
+        "description": "Pages of Practical Advice"
+      },
+      {
+        "title": "Coverage",
+        "label": "15+",
+        "description": "Major Cities Included"
+      },
+      {
+        "title": "Updated",
+        "label": "2025",
+        "description": "Current Information"
+      }
+    ]
+  },
+  "feature": {
+    "name": "features",
+    "title": "Everything You Need to Travel China",
+    "description": "Comprehensive, practical information that actually works - tested by real travelers in 2024.",
+    "items": [
+      {
+        "title": "Transportation Made Simple",
+        "description": "Step-by-step guides for trains, metro, taxis, and ride-sharing apps. Learn how to buy tickets, navigate stations, and get around like a local.",
+        "icon": "RiSubwayLine"
+      },
+      {
+        "title": "Visa & Entry Requirements",
+        "description": "Complete guide to visa applications, entry requirements, and customs procedures. Know exactly what documents you need and what to expect.",
+        "icon": "RiPassportLine"
+      },
+      {
+        "title": "Payment Apps Setup",
+        "description": "Detailed tutorials for setting up Alipay and WeChat Pay as a foreigner. Screenshots, troubleshooting, and tips for linking your international cards.",
+        "icon": "RiWallet3Line"
+      },
+      {
+        "title": "Essential Apps & VPN",
+        "description": "Complete list of must-have apps for China travel, plus VPN setup guide to access Google, Gmail, and other blocked services.",
+        "icon": "RiSmartphoneLine"
+      },
+      {
+        "title": "City Itineraries",
+        "description": "Detailed itineraries for Beijing, Shanghai, Xian, Chengdu, and more. Including must-see attractions, hidden gems, and realistic time estimates.",
+        "icon": "RiMapPinLine"
+      },
+      {
+        "title": "Cultural Tips & Language",
+        "description": "Essential etiquette, cultural dos and don'ts, basic Mandarin phrases, and how to communicate when you don't speak Chinese.",
+        "icon": "RiTranslate"
+      },
+      {
+        "title": "Food & Dining Guide",
+        "description": "Navigate Chinese restaurants, street food, dietary restrictions, and food safety. Plus translations of common dishes and how to order.",
+        "icon": "RiRestaurant2Line"
+      },
+      {
+        "title": "Troubleshooting & Safety",
+        "description": "Solutions to common problems travelers face, emergency contacts, safety tips, and what to do when things go wrong.",
+        "icon": "RiShieldLine"
+      },
+      {
+        "title": "Accommodation Booking",
+        "description": "How to book hotels as a foreigner, understanding Chinese booking platforms, and tips for checking in without complications.",
+        "icon": "RiHotelLine"
+      },
+      {
+        "title": "Offline Access",
+        "description": "Download the PDF and access everything offline. No internet needed - perfect for when you're traveling without reliable connectivity.",
+        "icon": "RiDownloadCloudLine"
+      },
+      {
+        "title": "Lifetime Updates",
+        "description": "Get free updates forever as visa rules, apps, and travel requirements change. We keep the guide current so you don't have to worry.",
+        "icon": "RiRefreshLine"
+      },
+      {
+        "title": "Real Experience",
+        "description": "Written by travelers who navigated China in 2024. No AI-generated fluff - just honest, practical advice that actually works.",
+        "icon": "RiUserHeartLine"
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Why This Guide is Different",
+    "label": "About",
+    "description": "Traveling to China can be overwhelming with language barriers, payment challenges, and internet restrictions. We've been there, figured it out, and compiled everything you need to know.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "Created by Real Travelers",
+        "description": "Every page is based on our actual experience traveling China in late 2024. No AI, no fluff, no outdated information copied from blogs.",
+        "icon": "RiUserLine"
+      },
+      {
+        "title": "Step-by-Step Tutorials",
+        "description": "Not just tips - actual tutorials with screenshots showing you exactly how to set up apps, buy tickets, and solve problems.",
+        "icon": "RiListCheck2"
+      },
+      {
+        "title": "Save Hours of Research",
+        "description": "Everything in one place instead of scattered across dozens of blog posts, Reddit threads, and outdated forums. Your time is valuable.",
+        "icon": "RiTimeLine"
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "Reviews",
+    "title": "What Travelers Are Saying",
+    "description": "Real feedback from independent travelers who used this guide for their China trips.",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "Sarah M.",
+        "label": "Solo Traveler, USA",
+        "description": "The Alipay setup guide alone was worth the price. I tried for days to figure it out from blog posts, but this guide had step-by-step screenshots that actually worked. Saved my trip!",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "James L.",
+        "label": "Family Trip, UK",
+        "description": "We used this guide for our 2-week family trip and it was invaluable. The transportation tutorials helped us navigate the metro systems confidently. My kids loved following the itineraries!",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Maria G.",
+        "label": "Digital Nomad, Spain",
+        "description": "Best $29 I've spent on travel resources. The VPN guide and app recommendations were spot-on. I could actually work while traveling thanks to the internet setup tips.",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "David K.",
+        "label": "Business Traveler, Australia",
+        "description": "As someone who travels to China for work, this guide filled in all the gaps. The cultural tips and dining etiquette helped me avoid embarrassing mistakes. Highly recommend.",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "Emma W.",
+        "label": "Student, Canada",
+        "description": "I was nervous about traveling China alone without speaking Chinese. This guide gave me the confidence to do it. The troubleshooting section saved me multiple times!",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "Tom R.",
+        "label": "Photographer, Germany",
+        "description": "The city itineraries were perfectly planned. I hit all the photo spots I wanted plus discovered hidden gems I never would have found. Worth every cent!",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Common Questions",
+    "description": "Quick answers to the most common questions. Visit our FAQ page for more.",
+    "items": [
+      {
+        "title": "What format is the guide in?",
+        "description": "It's a downloadable PDF that works on any device and can be accessed completely offline. Perfect for when you don't have internet in China."
+      },
+      {
+        "title": "Do I get free updates?",
+        "description": "Yes! All updates are completely free forever. When we release new versions, we'll email you and you can re-download from your account."
+      },
+      {
+        "title": "Is this AI-generated content?",
+        "description": "Absolutely not. Every word is written by real travelers who spent weeks in China in 2024. Real experiences, real advice, no AI fluff."
+      },
+      {
+        "title": "Do you offer refunds?",
+        "description": "Yes, we offer a 30-day money-back guarantee. If you're not satisfied, email us within 30 days and we'll refund you in full, no questions asked."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Ready to Travel China with Confidence?",
+    "description": "Get instant access to 200+ pages of practical travel advice. One-time payment, lifetime updates.",
+    "buttons": [
+      {
+        "title": "Get the Guide - $29",
+        "url": "/pricing",
+        "target": "_self",
+        "icon": "RiDownloadLine"
+      },
+      {
+        "title": "View FAQ",
+        "url": "/faq",
+        "target": "_self",
+        "variant": "outline",
+        "icon": "RiQuestionLine"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "China Tour Guide",
+      "description": "Your complete guide to traveling China independently. Created by real travelers, updated for 2025.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "China Tour Guide"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • China Tour Guide. All rights reserved.",
+    "nav": {
+      "items": [
+        {
+          "title": "Product",
+          "children": [
+            {
+              "title": "Pricing",
+              "url": "/pricing",
+              "target": "_self"
+            },
+            {
+              "title": "FAQ",
+              "url": "/faq",
+              "target": "_self"
+            },
+            {
+              "title": "My Orders",
+              "url": "/my-orders",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Legal",
+          "children": [
+            {
+              "title": "Privacy Policy",
+              "url": "/privacy-policy",
+              "target": "_self"
+            },
+            {
+              "title": "Terms of Service",
+              "url": "/terms-of-service",
+              "target": "_self"
+            },
+            {
+              "title": "Refund Policy",
+              "url": "/faq",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Support",
+          "children": [
+            {
+              "title": "Contact",
+              "url": "mailto:support@chinatourguide.com",
+              "target": "_self"
+            },
+            {
+              "title": "Sign In",
+              "url": "/auth/signin",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:support@chinatourguide.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}
