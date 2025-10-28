@@ -43,4 +43,4 @@ Makefile
 wrangler.toml
 supabase
 .*next
-.source
+.sourcedev.log
