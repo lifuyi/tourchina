@@ -89,6 +89,66 @@ export default function Hero({ hero }: { hero: HeroType }) {
               <p className="mt-8 text-md text-muted-foreground">{hero.tip}</p>
             )}
             {hero.show_happy_users && <HappyUsers />}
+            
+            {/* Hero Images Grid - China Travel Showcase */}
+            <div className="mt-16 lg:mt-20">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                {/* Large featured image */}
+                <div className="col-span-2 row-span-2">
+                  <div className="relative overflow-hidden rounded-2xl shadow-2xl h-full">
+                    <img
+                      src="/imgs/showcases/1.png"
+                      alt="China Travel - Great Wall"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                
+                {/* Top right images */}
+                <div className="col-span-1">
+                  <div className="relative overflow-hidden rounded-2xl shadow-lg h-32 md:h-48">
+                    <img
+                      src="/imgs/showcases/2.png"
+                      alt="China Travel - Shanghai"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                <div className="col-span-1">
+                  <div className="relative overflow-hidden rounded-2xl shadow-lg h-32 md:h-48">
+                    <img
+                      src="/imgs/showcases/3.png"
+                      alt="China Travel - Transportation"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                
+                {/* Bottom right images */}
+                <div className="col-span-1">
+                  <div className="relative overflow-hidden rounded-2xl shadow-lg h-32 md:h-48">
+                    <img
+                      src="/imgs/showcases/4.png"
+                      alt="China Travel - Food"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                <div className="col-span-1">
+                  <div className="relative overflow-hidden rounded-2xl shadow-lg h-32 md:h-48">
+                    <img
+                      src="/imgs/showcases/5.png"
+                      alt="China Travel - Culture"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              <p className="mt-8 text-sm text-muted-foreground">
+                Real photos from our September 2024 trip to China
+              </p>
+            </div>
           </div>
         </div>
       </section>
