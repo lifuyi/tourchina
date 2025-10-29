@@ -1,0 +1,80 @@
+
+> shipany-template-one@2.6.0 dev /Users/eyeopen/Downloads/projects/tourchina
+> cross-env NODE_NO_WARNINGS=1 next dev --turbopack
+
+[MDX] updated map file in 5.451666999999986ms
+[MDX] started dev server
+   ▲ Next.js 15.2.3 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.3.34:3000
+   - Environments: .env.development
+   - Experiments (use with caution):
+     · turbo
+
+ ✓ Starting...
+ ⚠ Invalid next.config.mjs options detected: 
+ ⚠     Unrecognized key(s) in object: 'turbopack'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Compiled in 158ms
+ ✓ Ready in 979ms
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.6s
+ GET / 200 in 1308ms
+ GET / 200 in 3837ms
+ GET / 200 in 174ms
+ GET / 200 in 250ms
+ ○ Compiling /[locale]/pricing ...
+ ✓ Compiled /[locale]/pricing in 1789ms
+ GET /pricing 200 in 2468ms
+ ○ Compiling /[locale]/faq ...
+ ✓ Compiled /[locale]/faq in 1108ms
+ GET /faq 200 in 1495ms
+ GET / 200 in 44ms
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+   ▲ Next.js 15.2.3 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.3.34:3000
+   - Environments: .env.development
+   - Experiments (use with caution):
+     · turbo
+
+ ✓ Starting...
+ ⚠ Invalid next.config.mjs options detected: 
+ ⚠     Unrecognized key(s) in object: 'turbopack'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Compiled in 235ms
+ ✓ Ready in 1231ms
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.7s
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.tyy2lo2usc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.tyy2lo2usc'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 541ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.0cv4c7gwvroa'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.0cv4c7gwvroa'
+}
+[Error: ENOENT: no such file or directory, open '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.tyy2lo2usc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.tyy2lo2usc'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.3tdgudtdls9'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.3tdgudtdls9'
+}
+[Error: ENOENT: no such file or directory, open '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.b3yx2ddcka5'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/eyeopen/Downloads/projects/tourchina/.next/static/development/_buildManifest.js.tmp.b3yx2ddcka5'
+}
