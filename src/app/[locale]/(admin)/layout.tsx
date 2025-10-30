@@ -67,19 +67,19 @@ export default async function AdminLayout({
       items: [
         {
           title: "Documents",
-          url: "https://docs.shipany.ai",
+          url: "https://chinatourguide.com/docs",
           target: "_blank",
           icon: "RiFileTextLine",
         },
         {
           title: "Blocks",
-          url: "https://shipany.ai/blocks",
+          url: "https://chinatourguide.com",
           target: "_blank",
           icon: "RiDashboardLine",
         },
         {
           title: "Showcases",
-          url: "https://shipany.ai/showcase",
+          url: "https://chinatourguide.com/showcase",
           target: "_blank",
           icon: "RiAppsLine",
         },
@@ -95,7 +95,7 @@ export default async function AdminLayout({
         },
         {
           title: "Github",
-          url: "https://github.com/shipanyai/shipany-template-one",
+          url: "https://github.com/yourusername/china-tour-guide",
           target: "_blank",
           icon: "RiGithubLine",
         },
@@ -107,7 +107,7 @@ export default async function AdminLayout({
         },
         {
           title: "X",
-          url: "https://x.com/shipanyai",
+          url: "https://x.com/chinatourguide",
           target: "_blank",
           icon: "RiTwitterLine",
         },

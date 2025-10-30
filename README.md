@@ -9,7 +9,7 @@ Ship Any AI SaaS Startups in hours.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/shipanyai/shipany-template-one.git
+git clone https://github.com/yourusername/china-tour-guide.git
 ```
 
 2. Install dependencies
@@ -51,7 +51,7 @@ cp .env.example .env.development
 for new project, clone with branch "cloudflare"
 
 ```shell
-git clone -b cloudflare https://github.com/shipanyai/shipany-template-one.git
+git clone -b cloudflare https://github.com/yourusername/china-tour-guide.git
 ```
 
 for exist project, checkout to branch "cloudflare"
@@ -79,8 +79,7 @@ npm run cf:deploy
 
 ## Community
 
-- [ShipAny](https://shipany.ai)
-- [Documentation](https://docs.shipany.ai)
+- [China Tour Guide](https://chinatourguide.com)
 
 ## License
 
