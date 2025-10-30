@@ -45,10 +45,10 @@
   "hero": {
     "title": "Travel China with Confidence in 2025",
     "highlight_text": "Travel China",
-    "description": "Honest, updated China travel guide for 2025. Created by travelers who navigated China in September 2024. 200+ pages of practical advice, tutorials, and troubleshooting. No AI fluff, just real experience.",
+    "description": "Honest, updated China travel guide for 2025. Created by travelers who navigated China in September 2025. 200+ pages of practical advice, tutorials, and troubleshooting. No AI fluff, just real experience.",
     "announcement": {
       "label": "Updated",
-      "title": "✨ Last updated: September 2024",
+      "title": "✨ Last updated: September 2025",
       "url": "/pricing"
     },
     "tip": "🎁 Launch price $29 - Lifetime updates included",
@@ -75,7 +75,7 @@
     "name": "stats",
     "label": "By the Numbers",
     "title": "Trusted by Independent Travelers",
-    "description": "Created by real travelers in September 2024 - No AI, just authentic experience",
+    "description": "Created by real travelers in September 2025 - No AI, just authentic experience",
     "icon": "FaRegHeart",
     "items": [
       {
@@ -90,7 +90,7 @@
       },
       {
         "title": "Last Updated",
-        "label": "Sept 2024",
+        "label": "Sept 2025",
         "description": "Recently Verified"
       }
     ]
@@ -98,11 +98,11 @@
   "feature": {
     "name": "features",
     "title": "Everything You Need to Travel China",
-    "description": "Comprehensive, practical information that actually works - tested by real travelers in 2024.",
+    "description": "Comprehensive, practical information that actually works - tested by real travelers in 2025.",
     "items": [
       {
         "title": "Transportation Made Simple",
-        "description": "Step-by-step guides with screenshots for booking trains on 12306 app, navigating metro systems, using Didi (Chinese Uber), and taxis. We tested every method ourselves in September 2024 and show you exactly how to do it.",
+        "description": "Step-by-step guides with screenshots for booking trains on 12306 app, navigating metro systems, using Didi (Chinese Uber), and taxis. We tested every method ourselves in September 2025 and show you exactly how to do it.",
         "icon": "RiSubwayLine"
       },
       {
@@ -117,7 +117,7 @@
       },
       {
         "title": "Essential Apps & VPN",
-        "description": "Complete list of must-have apps we used daily (translation, maps, transportation, food delivery). Plus VPN setup guide tested in September 2024 to access Google, Gmail, WhatsApp, and other blocked services. We tell you which VPNs actually work.",
+        "description": "Complete list of must-have apps we used daily (translation, maps, transportation, food delivery). Plus VPN setup guide tested in September 2025 to access Google, Gmail, WhatsApp, and other blocked services. We tell you which VPNs actually work.",
         "icon": "RiSmartphoneLine"
       },
       {
@@ -157,7 +157,7 @@
       },
       {
         "title": "100% Real Experience - No AI",
-        "description": "Written by travelers who navigated China in September 2024. Every app was tested, every route was taken, every problem was solved by us personally. No AI-generated content, no copied blog posts - just honest, practical advice that actually works.",
+        "description": "Written by travelers who navigated China in September 2025. Every app was tested, every route was taken, every problem was solved by us personally. No AI-generated content, no copied blog posts - just honest, practical advice that actually works.",
         "icon": "RiUserHeartLine"
       }
     ]
@@ -166,14 +166,14 @@
     "name": "introduce",
     "title": "Why This Guide is Different",
     "label": "About",
-    "description": "Traveling to China can be overwhelming with language barriers, payment challenges, and internet restrictions. We traveled China in September 2024, figured it out through real trial and error, and compiled everything you need to know. Every tip has been tested on the ground.",
+    "description": "Traveling to China can be overwhelming with language barriers, payment challenges, and internet restrictions. We traveled China in September 2025, figured it out through real trial and error, and compiled everything you need to know. Every tip has been tested on the ground.",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "Created by Real Travelers in Sept 2024",
-        "description": "Every page is based on our actual experience navigating China in September 2024. We tested every app, rode every metro, and solved every problem ourselves. No AI, no fluff, no outdated information.",
+        "title": "Created by Real Travelers in Sept 2025",
+        "description": "Every page is based on our actual experience navigating China in September 2025. We tested every app, rode every metro, and solved every problem ourselves. No AI, no fluff, no outdated information.",
         "icon": "RiUserLine"
       },
       {
@@ -197,7 +197,7 @@
     "items": [
       {
         "title": "Sarah M.",
-        "label": "Solo Traveler, USA • Traveled Oct 2024",
+        "label": "Solo Traveler, USA • Traveled Oct 2025",
         "description": "The Alipay setup guide alone was worth the price. I tried for days to figure it out from scattered blog posts, but this guide had step-by-step screenshots that actually worked. I had Alipay running in 20 minutes. Saved my trip!",
         "image": {
           "src": "/imgs/users/1.png"
@@ -205,7 +205,7 @@
       },
       {
         "title": "James L.",
-        "label": "Family Trip, UK • Traveled Nov 2024",
+        "label": "Family Trip, UK • Traveled Nov 2025",
         "description": "We used this guide for our 2-week family trip to Beijing and Shanghai and it was invaluable. The transportation tutorials with screenshots helped us navigate the metro systems confidently. My kids loved following the itineraries!",
         "image": {
           "src": "/imgs/users/2.png"
@@ -213,7 +213,7 @@
       },
       {
         "title": "Maria G.",
-        "label": "Digital Nomad, Spain • Traveled Dec 2024",
+        "label": "Digital Nomad, Spain • Traveled Dec 2025",
         "description": "Best $29 I've spent on travel resources. The VPN guide and app recommendations were spot-on and actually worked (unlike many outdated guides). I could work remotely the entire trip thanks to the internet setup tips.",
         "image": {
           "src": "/imgs/users/3.png"
@@ -221,7 +221,7 @@
       },
       {
         "title": "David K.",
-        "label": "Business Traveler, Australia • Traveled Oct 2024",
+        "label": "Business Traveler, Australia • Traveled Oct 2025",
         "description": "As someone who travels to China for work, this guide filled in all the gaps. The cultural tips and dining etiquette helped me avoid embarrassing mistakes with clients. The payment app setup was crucial. Highly recommend.",
         "image": {
           "src": "/imgs/users/4.png"
@@ -229,7 +229,7 @@
       },
       {
         "title": "Emma W.",
-        "label": "Student, Canada • Traveled Nov 2024",
+        "label": "Student, Canada • Traveled Nov 2025",
         "description": "I was nervous about traveling China alone without speaking Chinese. This guide gave me the confidence to do it. The troubleshooting section with real solutions saved me multiple times when things went wrong!",
         "image": {
           "src": "/imgs/users/5.png"
@@ -237,7 +237,7 @@
       },
       {
         "title": "Tom R.",
-        "label": "Photographer, Germany • Traveled Dec 2024",
+        "label": "Photographer, Germany • Traveled Dec 2025",
         "description": "The city itineraries were perfectly planned with optimal times for lighting. I hit all the photo spots I wanted plus discovered hidden gems I never would have found online. Worth every cent!",
         "image": {
           "src": "/imgs/users/6.png"
@@ -261,7 +261,7 @@
       },
       {
         "title": "Is this AI-generated content?",
-        "description": "Absolutely not. Every word is written by real travelers who spent weeks in China in 2024. Real experiences, real advice, no AI fluff."
+        "description": "Absolutely not. Every word is written by real travelers who spent weeks in China in 2025. Real experiences, real advice, no AI fluff."
       },
       {
         "title": "Do you offer refunds?",

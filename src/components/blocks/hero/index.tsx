@@ -146,7 +146,7 @@ export default function Hero({ hero }: { hero: HeroType }) {
               </div>
               
               <p className="mt-8 text-sm text-muted-foreground">
-                Real photos from our September 2024 trip to China
+                Real photos from our September 2025 trip to China
               </p>
             </div>
           </div>
